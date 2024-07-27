@@ -1,0 +1,4 @@
+nums = [2,4,8,9,33,56]
+target = 2
+index = nums.index(target) if target in nums else -1
+print("Index of", target, "in array:", index)

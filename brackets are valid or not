@@ -1,0 +1,16 @@
+s = input("enter a string of brackets:")
+bracket_map = {')': '(', ']': '[', '}': '{'}
+stack = []
+for char in s:
+    if char in bracket_map:
+        if stack and stack[-1] == bracket_map[char]:
+            stack.pop()  
+        else:
+            print(False)  
+            break
+    else:
+        stack.append(char)
+else:
+    print(not stack)
+s = "()[]"
+print(not stack)

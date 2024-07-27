@@ -1,0 +1,8 @@
+nums = [2, 1]
+unique_nums = list(set(nums))
+unique_nums.sort(reverse=True)
+if len(unique_nums) >= 3:
+    third_max = unique_nums[2]  
+else:
+    third_max = unique_nums[0]    
+print(third_max)

@@ -1,0 +1,10 @@
+from statistics import mean,mode,median,stdev
+numbers=[1,2,3,4,5,6,7,9,3]
+mean_val=mean(numbers)
+median_val=median(numbers)
+mode_val=mode(numbers)
+standard_deviation=stdev(numbers)
+print("mean is: ",mean_val)
+print("median is: ",median_val)
+print("mode is:",mode_val)
+print("standard deviation is: ",standard_deviation)

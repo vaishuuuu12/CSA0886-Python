@@ -1,0 +1,4 @@
+"""string="python is too hard"
+index=string[-1]
+length=len(index)
+print("length is",length)
