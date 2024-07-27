@@ -1,0 +1,11 @@
+
+numbers = [2, 7, 11, 15]
+target = 18
+seen_numbers = {}
+for index, number in enumerate(numbers):
+    needed_number = target - number
+    if needed_number in seen_numbers:
+        result = [seen_numbers[needed_number], index]
+        break
+    seen_numbers[number] = index
+print(result)
